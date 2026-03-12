@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecha Snake - Rayquaza</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div id="menu-inicial" class="menu-overlay">
+        <h1 class="titulo-menu">SNAKE RAYQUAZA</h1>
+        <p class="subtitulo">A aguardar parâmetros de missão...</p>
+        
+        <div class="opcoes-grupo">
+            <h3>MODO DE JOGO</h3>
+            <button class="btn-modo selecionado" data-modo="infinito">Missão Infinita</button>
+            <button class="btn-modo" data-modo="1000">Alvo: 1000 Pts</button>
+        </div>
+
+        <div class="opcoes-grupo">
+            <h3>NÍVEL DE AMEAÇA (VELOCIDADE)</h3>
+            <button class="btn-vel" data-vel="300">Lento</button>
+            <button class="btn-vel selecionado" data-vel="150">Normal</button>
+            <button class="btn-vel" data-vel="80">Extremo</button>
+        </div>
+
+        <button id="btn-iniciar" disabled>A CARREGAR SISTEMAS...</button>
+    </div>
+
+    <canvas id="jogoCanvas"></canvas>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
